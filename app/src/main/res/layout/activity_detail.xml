@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.detail.DetailActivity">
+
+    <ImageView
+        android:id="@+id/ivDetailProductImage"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:src="@color/teal_700"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvDetailProductName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        tools:text="Product Name"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:maxLines="2"
+        android:ellipsize="end"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivDetailProductImage"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvDetailProductDesc"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        tools:text="Product Desc"
+        android:textSize="16sp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:maxLines="5"
+        android:ellipsize="end"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvDetailProductName"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvDetailProductPrice"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        tools:text="$ 45.00"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        android:maxLines="2"
+        android:ellipsize="end"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <ImageView
+        android:id="@+id/ivDetailAddtocart"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:padding="8dp"
+        android:src="@drawable/ic_add_shopping_cart"
+        android:background="@drawable/main_button"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tvDetailProductPrice"
+        app:layout_constraintBottom_toBottomOf="@id/tvDetailProductPrice"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
